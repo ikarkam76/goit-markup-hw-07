@@ -26,56 +26,56 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+
+    .team__item {
+        width: calc((100% - 90px) / 4);
+        margin-right: 30px;
+
+        background-color: $primaryBgColor;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .team__item:nth-child(4n) {
+        margin-right: 0;
+    }
+
 }
 
-.team__item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-
-    background-color: $primaryBgColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
 
 .team__icon-list {
     display: flex;
     margin-top: 16px;
     justify-content: center;
-}
 
-.icon-list__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
+    .link {
+        display: flex;
+        width: 44px;
+        height: 44px;
 
-    color: $primaryIconColor;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
+        color: $primaryIconColor;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
 
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: $timingFunction;
-}
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: $timingFunction;
+    
+        &:hover, &:focus {
+            background-color: $linkActiveColor;
+            color: $buttonActiveTextColor;
+        }
 
-.icon-list__item:not(:last-child) {
-    margin-right: 10px;
-}
+    }
+  .item:not(:last-child) {
+      margin-right: 10px;
+    }
 
-.icon-list__icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
+    .icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
 
-.icon-list__link:hover,
-.icon-list__link:focus {
-    background-color: $linkActiveColor;
-    color: $buttonActiveTextColor;
-}
-
-
-
-.team__item:nth-child(4n) {
-    margin-right: 0;
 }

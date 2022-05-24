@@ -20,54 +20,21 @@
     margin-bottom: 10px;
 }
 
-.feature__antenna::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
+@each $feature in antenna,
+clock,
+diagram,
+astronaut {
+    .feature__#{$feature}::before {
+        display: block;
+        content: "";
+        height: 120px;
+        margin-bottom: 30px;
 
-    background-color: $sectionBgColor;
-    background-image: url(../Images/antenna.svg);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-}
+        background-color: $sectionBgColor;
+        background-image: url(../Images/#{$feature}.svg);
+        background-repeat: no-repeat;
+        background-size: 70px;
+        background-position: center;
+    }
 
-.feature__clock::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-color: $sectionBgColor;
-    background-image: url(../Images/clock.svg);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-}
-
-.feature__diagram::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-color: $sectionBgColor;
-    background-image: url(../Images/diagram.svg);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-}
-
-.feature__astronaut::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-color: $sectionBgColor;
-    background-image: url(../Images/astronaut.svg);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
 }
