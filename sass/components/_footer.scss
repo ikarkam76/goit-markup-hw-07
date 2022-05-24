@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--secondary-background-color);
+    background-color: $secondaryBgColor;
 }
 
 .footer__container {
@@ -11,14 +11,14 @@
 }
 
 .footer__logo {
-    color: var(--footer-secondary-logo-color);
+    color: $footerLogoColor;
 }
 
 .footer__address {
     margin-top: 20px;
     font-style: normal;
 
-    color: var(--footer-address-text-color);
+    color: $footerAddressColor;
 }
 
 
@@ -41,5 +41,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: var(--footer-contact-text-color);
+    color: $footerContactColor;
 }

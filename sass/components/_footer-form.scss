@@ -17,7 +17,7 @@
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: var(--primary-title-text-color);
+    color: $primaryTitleColor;
 }
 
 .footer__form__input {
@@ -32,11 +32,11 @@
     display: flex;
     align-items: center;
 
-    color: var(--footer-contact-text-color);
+    color: $footerContactColor;
 
-    background-color: var(--secondary-background-color);
-    border: 1px solid var(--footrer-email-input-border);
-    box-shadow: 0px 4px 4px var(--box-shadow-color);
+    background-color: $secondaryBgColor;
+    border: 1px solid $footerInputBorder;
+    box-shadow: 0px 4px 4px $boxShadowColor;
     border-radius: 4px;
 }
 
@@ -56,15 +56,15 @@
     padding-right: 28px;
 
 
-    color: var(--button-text-active-color);
-    background: var(--button-active-color);
-    box-shadow: 0px 4px 4px var(--box-shadow-color);
+    color: $buttonActiveTextColor;
+    background: $buttonActiveColor;
+    box-shadow: 0px 4px 4px $boxShadowColor;
     border: none;
     border-radius: 4px;
 
 }
 
 .footer__form__send {
-    fill: var(--button-text-active-color);
+    fill: $buttonActiveTextColor;
     margin-left: 10px;
 }

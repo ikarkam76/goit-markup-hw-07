@@ -33,6 +33,6 @@
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: var(--primary-title-text-color);
-    background-color: var(--specific-item-tittle-bgc);
+    color: $primaryTitleColor;
+    background-color: $specificItemTitleBgColor;
 }

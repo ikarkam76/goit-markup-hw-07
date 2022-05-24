@@ -7,11 +7,11 @@
     width: 100%;
     height: 100%;
 
-    background-color: var(--modal-backdrop-bgc);
+    background-color: $modalBackdropBgColor;
 
     opacity: 1;
     transition-property: opacity, visibility;
-    transition-timing-function: var(--timihg-function);
+    transition-timing-function: $timingFunction;
     transition-duration: 250ms;
 }
 
@@ -35,14 +35,14 @@
     height: 581px;
     padding: 40px;
 
-    background-color: var(--primary-background-color);
+    background-color: $primaryBgColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1);
     transition-property: transform;
     transition-duration: 250ms;
-    transition-timing-function: var(--timihg-function);
+    transition-timing-function: $timingFunction;
 
 }
 
@@ -59,19 +59,19 @@
     align-items: center;
 
 
-    background-color: var(--primary-background-color);
+    background-color: $primaryBgColor;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 
-    transition: box-shadow border-color fill 250ms var(--timihg-function);
+    transition: box-shadow border-color fill 250ms $timingFunction;
 }
 
 .modal__close-button:hover,
 .modal__close-button:focus {
     outline: none;
-    border-color: var(--button-active-color);
-    box-shadow: 0px 4px 4px var(--box-shadow-color);
-    fill: var(--button-active-color);
+    border-color: $buttonActiveColor;
+    box-shadow: 0px 4px 4px $boxShadowColor;
+    fill: $buttonActiveColor;
 
 }
 
@@ -83,7 +83,7 @@
     margin-bottom: 2px;
 
 
-    color: var(--secondary-title-text-color);
+    color: $secondaryTitleColor;
 }
 
 
@@ -99,17 +99,17 @@
     letter-spacing: 0.01em;
     text-align: start;
 
-    color: var(--primary-text-color);
+    color: $primaryTextColor;
 }
 
 .modal__user-input {
     height: 40px;
     margin-top: 4px;
     padding-left: 42px;
-    border: 1px solid var(--modal-input-border);
+    border: 1px solid $modalInputBorder;
     border-radius: 4px;
 
-    transition: border-color 250ms var(--timihg-function);
+    transition: border-color 250ms $timingFunction;
 }
 
 .modal__icon {
@@ -120,21 +120,21 @@
 
 .modal__user-input:focus-within {
     outline: none;
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
 }
 
 .modal__user-input:not(:placeholder-shown) {
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
 }
 
 
 
 .modal__user-input:focus-within+.modal__icon {
-    fill: var(--button-active-color);
+    fill: $buttonActiveColor;
 }
 
 .modal__user-input:not(:placeholder-shown)+.modal__icon {
-    fill: var(--button-active-color);
+    fill: $buttonActiveColor;
 }
 
 .modal__comment {
@@ -146,20 +146,20 @@
 
 
     border: 1px solid;
-    border-color: var(--modal-input-border);
+    border-color: $modalInputBorder;
     border-radius: 4px;
 
-    transition: border-color 250ms var(--timihg-function);
+    transition: border-color 250ms $timingFunction;
 
 }
 
 .modal__comment:focus-within {
     outline: none;
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
 }
 
 .modal__comment:not(:placeholder-shown) {
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
 }
 
 
@@ -174,7 +174,7 @@
     margin-top: 20px;
 
 
-    color: var(--primary-text-color);
+    color: $primaryTextColor;
 }
 
 .modal__checkbox-text {
@@ -185,8 +185,9 @@
 
 }
 
-.link-contract {
-    color: var(--link-active-color);
+.modal__link {
+    color: $linkActiveColor;
+    margin-left: 2px;
 }
 
 .modal__send-button {
@@ -201,17 +202,17 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
 
-    color: var(--primary-title-text-color);
-    background-color: var(--button-active-color);
-    box-shadow: 0px 4px 4px var(--box-shadow-color);
+    color: $primaryTitleColor;
+    background-color: $buttonActiveColor;
+    box-shadow: 0px 4px 4px $boxShadowColor;
     border-radius: 4px;
 
-    transition: background-color 250ms var(--timihg-function);
+    transition: background-color 250ms $timingFunction;
 }
 
 .modal__send-button:hover,
 .modal__send-button:focus {
-    background-color: var(--button-send-hover-color);
+    background-color: $buttonSendHoverColor;
 }
 
 .modal__check {
@@ -222,25 +223,25 @@
 
     border: 2px solid;
     border-radius: 2px;
-    border-color: var(--header-secondary-logo-color);
+    border-color: $headerLogoColor;
 
-    transition: border-width border-color background-color background-image 250ms var(--timihg-function);
+    transition: border-width border-color background-color background-image 250ms $timingFunction;
 
 }
 
 .modal__checkbox:hover .modal__check {
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
 }
 
 .modal__checkbox-text:focus+.modal__check {
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
 }
 
 .modal__checkbox-text:checked+.modal__check {
-    background-color: var(--button-active-color);
+    background-color: $buttonActiveColor;
     background-image: url(../Images/check.svg);
     background-position: center;
     border-width: 1px;
-    border-color: var(--button-active-color);
+    border-color: $buttonActiveColor;
     background-size: contain;
 }

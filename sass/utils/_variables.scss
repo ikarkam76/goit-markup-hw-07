@@ -1,31 +1,39 @@
-:root {
---primary-logo-color: #2196F3;
---header-secondary-logo-color: #000000;
---footer-secondary-logo-color: #FFFFFF;
---footer-address-text-color: #FFFFFF;
---footer-contact-text-color: rgba(255, 255, 255, 0.6);
---button-active-color: #2196F3;
---button-text-active-color: #ffffff;
---link-active-color: #2196F3;
---primary-text-color: #757575;
---primary-title-text-color: #ffffff;
---secondary-title-text-color: #212121;
---primary-background-color: #FFFFFF;
---secondary-background-color: #2F303A;
---sections-background-color: #F5F4FA;
---header-bottom-border: #ECECEC;
---work-list-border: #EEEEEE;
---primary-icon-color: #AFB1B8;
---footer-icon-join-bgc: rgba(255, 255, 255, 0.1);
---footrer-email-input-border: rgba(255, 255, 255, 0.3);
---specific-item-tittle-bgc: rgba(47, 48, 58, 0.8);
---overlay-bgc: rgba(33, 150, 243, 0.9);
---modal-backdrop-bgc: rgba(0, 0, 0, 0.2);
---timihg-function: cubic-bezier(0.4, 0, 0.2, 1);
---modal-input-border: rgba(33, 33, 33, 0.2);
---modal-comment-text: rgba(117, 117, 117, 0.5);
---button-send-hover-color: #188CE8;
---box-shadow-color: rgba(0, 0, 0, 0.15);
+$primaryLogoColor: #2196F3;
+$headerLogoColor: #000;
+$footerLogoColor: #fff;
+$footerAddressColor: #FFFFFF;
+$footerContactColor: rgba(255, 255, 255, 0.6);
+$secondaryBgColor: #2F303A;
+$buttonActiveColor: #2196F3;
+$boxShadowColor: rgba(0, 0, 0, 0.15);
+$buttonSendHoverColor: #188CE8;
+$modalCommentText: rgba(117, 117, 117, 0.5);
+$modalInputBorder: rgba(33, 33, 33, 0.2);
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$modalBackdropBgColor: rgba(0, 0, 0, 0.2);
+$overlayBgColor: rgba(33, 150, 243, 0.9);
+$specificItemTitleBgColor: rgba(47, 48, 58, 0.8);
+$footerInputBorder: rgba(255, 255, 255, 0.3);
+$footerIconJoinBgColor: rgba(255, 255, 255, 0.1);
+$primaryIconColor: #AFB1B8;
+$workListBorder: #EEEEEE;
+$headerBottomBorder: #ECECEC;
+$sectionBgColor: #F5F4FA;
+$primaryBgColor: #FFFFFF;
+$secondaryTitleColor: #212121;
+$primaryTitleColor: #FFFFFF;
+$linkActiveColor: #2196F3;
+$primaryTextColor: #757575;
+$buttonActiveTextColor: #FFFFFF;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+
 }
 
 .visually-hidden {

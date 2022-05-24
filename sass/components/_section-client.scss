@@ -16,13 +16,13 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--primary-icon-color);
-    border: 1px solid var(--primary-icon-color);
+    color: $primaryIconColor;
+    border: 1px solid $primaryIconColor;
     border-radius: 4px;
 
     transition-property: border-color, color;
     transition-duration: 250ms;
-    transition-timing-function: var(--timihg-function);
+    transition-timing-function: $timingFunction;
 }
 
 
@@ -32,6 +32,6 @@
 
 .client__link:hover,
 .client__link:focus {
-    color: var(--link-active-color);
-    border-color: var(--link-active-color);
+    color: $linkActiveColor;
+    border-color: $linkActiveColor;
 }
